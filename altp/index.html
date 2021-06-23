@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .quadrat {
+            width: 30px;
+            height: 20px;
+            -webkit-animation: NAME-YOUR-ANIMATION 1s infinite;
+            /* Safari 4+ */
+            -moz-animation: NAME-YOUR-ANIMATION 1s infinite;
+            /* Fx 5+ */
+            -o-animation: NAME-YOUR-ANIMATION 1s infinite;
+            /* Opera 12+ */
+            animation: NAME-YOUR-ANIMATION 1s infinite;
+            /* IE 10+, Fx 29+ */
+        }
+
+        @-webkit-keyframes NAME-YOUR-ANIMATION {
+
+            0%,
+            49% {
+                background-color: rgb(117, 209, 63);
+                border: 3px solid #e50000;
+            }
+
+            50%,
+            100% {
+                background-color: #e50000;
+                border: 3px solid rgb(117, 209, 63);
+            }
+        }
+            #million img,
+            #welcomeScreen img {
+                display: block;
+                background-size: contain;
+                width: 200px;
+                margin: 20px auto;
+            }
+
+            #wrapper {
+                border: 2px solid #111;
+                width: 500px;
+                height: 450px;
+                background-color: #030e2c;
+                margin: 10px auto;
+                border-radius: 8px;
+            }
+
+            #btnStart {
+                padding: 10px 20px;
+                background-color: #4c56;
+                margin: 50px auto;
+                display: block;
+                color: white;
+
+            }
+
+
+            #questions {
+                text-align: center;
+                padding: 8px 0;
+                background-color: blue;
+                border-radius: 4px;
+                color: white;
+                cursor: pointer;
+                width: 85%;
+                margin: 70px auto;
+                border: 2px solid #fff;
+
+            }
+
+            #answer_1,
+            #answer_2,
+            #answer_3,
+            #answer_4 {
+                text-align: center;
+                padding: 4px 0;
+                background-color: blueviolet;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+                color: white;
+                cursor: pointer;
+                width: 80%;
+                margin: 25px auto;
+            }
+
+            .hide {
+                display: none;
+            }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="welcomeScreen" class="hide">
+            <img src="http://hcgamez.com/wp-content/uploads/2018/08/ai-la-trieu-phu-02.png" alt="">
+            <button id="btnStart">Start</button>
+        </div>
+        <div id="questionScreen" class="hide">
+            <div id="questions">Câu Hỏi </div>
+            <div id="answer">
+                <div id="answer_1" class="myDiv">Câu trả lời 1</div>
+                <div id="answer_2" class="myDiv">Câu trả lời 2</div>
+                <div id="answer_3" class="myDiv">Câu trả lời 3</div>
+                <div id="answer_4" class="myDiv">Câu trả lời 4</div>
+            </div>
+        </div>
+        <div id="million">
+            <img src="http://hcgamez.com/wp-content/uploads/2018/08/ai-la-trieu-phu-02.png" alt="">
+        </div>
+    </div>
+
+
+</body>
+<script src="./sound.js"></script>
+<script src="./ui.js"></script>
+<script src="./altp.js"></script>
+
+</html>

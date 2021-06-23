@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            background:red;
+            }
+        #btnStart{
+            padding:16px 30px;
+            margin:80px auto;
+            display: block;
+            background-color: rgba(31, 12, 158, 0.933);
+            color:white;
+            font-size:1.6rem;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        #wrapper{
+            width: 400px;
+            border:2px solid #111;
+            height: 400px;
+            margin:0 auto;
+        }
+        #questions{
+            text-align: center;
+            margin:50px auto;
+            width:80%;
+            border:2px solid #111;
+            background-color:#171643;
+            color:white;
+        }
+        #answers > div{
+            text-align: center;
+            width: 70%;
+            background-color:#ece;
+            text-align: center;
+            margin:20px auto;
+        }
+        
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="wellcomeScreen" >
+        <button id="btnStart">Start</button>
+    </div>
+    <div id="questionScreen" >
+        <div id="questions">Câu hỏi 1</div>
+        <div id="answers">
+            <div id="answer_0">Câu Hỏi 2</div>
+            <div id="answer_1">Câu Hỏi 2</div>
+            <div id="answer_2">Câu Hỏi 2</div>
+            <div id="answer_3">Câu Hỏi 2</div>
+        </div>
+    </div>
+</div>
+    
+</body>
+<script src="./sound.js"></script>
+<script src="./ui.js"></script>
+<script src="./altp.js"></script>
+</html>
