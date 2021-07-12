@@ -17,8 +17,9 @@ class CategoryController extends Controller
         $this->category = $category;
     }
     public function index() {
-        $categories = $this->category->paginate(6);
-        return view('admins.category.index',compact('categories'));
+        dd(bcrypt('matkhau'));
+        // $categories = $this->category->paginate(6);
+        // return view('admins.category.index',compact('categories'));
     }
     public function create() {
         $categories = $this->category->all();

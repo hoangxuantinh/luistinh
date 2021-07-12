@@ -1,3 +1,6 @@
+<?php 
+    $baseUrl = 'http://localhost:8000';
+ ?>
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -131,7 +134,7 @@
 
                                                             <tr>
                                                                 <td class="si-pic"><img
-                                                                        src="{{ $cart['productInfor']->feature_image_path }}"
+                                                                        src="{{ asset($baseUrl.$cart['productInfor']->feature_image_path)  }}"
                                                                         class="img-card"></td>
                                                                 <td class="si-text">
                                                                     <div class="product-selected">

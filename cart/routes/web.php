@@ -219,35 +219,35 @@ Route::prefix('admin')->group(function () {
 
 });
 
-// Route::get('/trangchu',[
-//     'as' => 'home',
-//     'uses' => 'UiController@index'
-//     ]);
-// Route::get('/home','UiController@home');
-// Route::get('add-cart/{id}',[
-//     'as' => 'add-cart',
-//     'uses' => 'UiController@addCart'
-// ]);
-// Route::get('delete-cart/{id}',[
-//     'as' => 'delete-cart',
-//     'uses' => 'UiController@deleteCart'
-// ]);
-// Route::get('cart-list',[
-//     'as' => 'cart-list',
-//     'uses' => 'UiController@listCart'
-// ]);
-// Route::get('delete_cart/{id}',[
-//     'as' => 'delete_cart',
-//     'uses' => 'UiController@deleteCartlist'
-// ]);
-// Route::get('update_cart-item/{id}',[
-//     'as' => 'update_cart',
-//     'uses' => 'UiController@updateCart'
-// ]);
-// Route::post('updateAll_cart-item',[
-//     'as' => 'updateall_cart',
-//     'uses' => 'UiController@updateALLCart'
-// ]);
+Route::get('/trangchu',[
+    'as' => 'home',
+    'uses' => 'UiController@index'
+    ]);
+Route::get('/home','UiController@home');
+Route::get('add-cart/{id}',[
+    'as' => 'add-cart',
+    'uses' => 'UiController@addCart'
+]);
+Route::get('delete-cart/{id}',[
+    'as' => 'delete-cart',
+    'uses' => 'UiController@deleteCart'
+]);
+Route::get('cart-list',[
+    'as' => 'cart-list',
+    'uses' => 'UiController@listCart'
+]);
+Route::get('delete_cart/{id}',[
+    'as' => 'delete_cart',
+    'uses' => 'UiController@deleteCartlist'
+]);
+Route::get('update_cart-item/{id}',[
+    'as' => 'update_cart',
+    'uses' => 'UiController@updateCart'
+]);
+Route::post('updateAll_cart-item',[
+    'as' => 'updateall_cart',
+    'uses' => 'UiController@updateALLCart'
+]);
 
 
 

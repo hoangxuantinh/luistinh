@@ -41,7 +41,8 @@ class ProductController extends Controller
         return view('admins.products.add',compact('htmlOptions'));
     }
     
-    public function store(ProductRequest $request) {
+    public function store(Request $request) {
+        
         try{
             DB::beginTransaction();
             $data = [

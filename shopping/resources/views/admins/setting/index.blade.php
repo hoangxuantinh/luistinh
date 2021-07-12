@@ -26,7 +26,7 @@
                 <table class="table">
                     <thead class="thead-dark">
                         <tr>
-                            <th scope="col">#</th>
+                            <th scope="col">id</th>
                             <th scope="col" class="text-white">Config Key</th>
                             <th scope="col" class="text-white ">Config Value</th>
                             <th scope="col" class="text-white text-center ">Action</th>
@@ -35,10 +35,10 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($settings as  $item)
+                        @foreach ($settings as $index => $item)
 
                             <tr>
-                                <th scope="row"></th>
+                                <th scope="row">{{ $item->id }}</th>
                                 <td>{{ $item->config_key }}</td>
                                 <td>{{ $item->config_value }}</td>
                                 
